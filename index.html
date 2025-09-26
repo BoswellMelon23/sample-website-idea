@@ -1,1 +1,178 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Placeholder</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 11px;
+      background-color: #9ea79e;
+      color: #111;
+    }
+
+    /* Header */
+    header {
+      background-color: #4c5d4c;
+      color: #fff;
+      border-bottom: 2px solid #333;
+      padding: 5px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 4px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 10px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #6b7e6b;
+      border: 1px solid #333;
+    }
+
+    nav ul li a:hover {
+      background-color: #829682;
+    }
+
+    /* Layout */
+    .container {
+      display: grid;
+      grid-template-columns: 180px 1fr 180px;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    aside, main, .rightbar {
+      background: #cfd6cf;
+      padding: 8px;
+      border: 1px solid #666;
+    }
+
+    aside h2, .rightbar h2, main h2 {
+      font-size: 11px;
+      background: #6b7e6b;
+      color: #fff;
+      margin: -8px -8px 8px -8px;
+      padding: 3px 5px;
+      border-bottom: 1px solid #333;
+    }
+
+    aside ul {
+      margin: 0;
+      padding: 0 0 0 12px;
+    }
+
+    aside ul li {
+      margin: 3px 0;
+    }
+
+    /* Content */
+    .deviations {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .deviation {
+      background: #eee;
+      border: 1px solid #999;
+      height: 80px;
+      text-align: center;
+      font-size: 10px;
+      padding-top: 30px;
+    }
+
+    /* Footer */
+    footer {
+      background: #4c5d4c;
+      color: #fff;
+      text-align: center;
+      font-size: 10px;
+      padding: 6px;
+      border-top: 2px solid #333;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>placeholder </h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Deviations</a></li>
+        <li><a href="#">Prints</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside>
+      <h2>Placeholder Prints</h2>
+      <p><em>Streetscape - Print</em><br>by user123</p>
+
+      <h2>Deviations</h2>
+      <ul>
+        <li>All </li>
+        <li>Random </li>
+        <li>Popular </li>
+        <li>Groups </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Join placeholder Now!</h2>
+      <p>Register for a free membership to the fastest growing, most popular and most exciting online art community! Select your desired username and click "Join" to register.</p>
+
+      <h2>Recent Deviation Submissions</h2>
+      <div class="deviations">
+        <div class="deviation">Image 1</div>
+        <div class="deviation">Image 2</div>
+        <div class="deviation">Image 3</div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <div class="rightbar">
+      <h2>Hot News</h2>
+      <p>Join placeholder today and start submitting your work!</p>
+
+      <h2>Placeholder Prints</h2>
+      <p>Now Open! Buy Your!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 placeholder</p>
+  </footer>
+</body>
+</html>
